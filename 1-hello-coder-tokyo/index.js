@@ -2,12 +2,22 @@ var express = require('express');
 var app = express();
 var port = 3000;
 
-app.get('/', function(request, response) {
-	response.send('<h1>Hello Coders.Tokyo<h1>');
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+app.get('/', function(req, res) {
+	res.render('index', {
+		name:'AAA'
+	});
 });
 
-app.get('/User', function(request, response) {
-	response.send('User list');
+app.get('/users', function(req, res) {
+	res.render('users/index', {
+		users: [
+		{ id: 1, name: 'thinh'},
+		{ id: 2, name: 'hung'}
+		]
+	});
 });
 
 app.listen(3000, function() {
