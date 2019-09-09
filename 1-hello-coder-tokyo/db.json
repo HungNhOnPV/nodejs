@@ -636,5 +636,17 @@
       "image": "https://loremflickr.com/320/240",
       "description": "a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut"
     }
+  ],
+  "sessions": [
+    {
+      "id": "mfvMJ7cHG"
+    },
+    {
+      "id": "NQ5WLfSWo",
+      "cart": {
+        "14e147a9-72ca-4bae-b27f-827c6f9b9a5d": 1,
+        "8a39351c-d260-4ffb-b80b-8c794a426829": 3
+      }
+    }
   ]
 }

@@ -17,3 +17,14 @@ block content
             h5.card-title= product.name
             p.card-text= product.description
             a.btn.btn-primary(href='/cart/add/' + product.id) Add to cart
+
+  .btn-group(role='group', aria-label='Button group with nested dropdown', style='margin-bottom: 100px')
+    button.p-0.border-0
+      a.btn.btn-secondary(type='button', href="/products?page=1") 1
+    button.p-0.border-0
+      a.btn.btn-secondary(type='button', href="/products?page=2") 2
+      .btn-group(role='group')
+        button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupDrop1')
+        a.dropdown-item(href='/products?page=3') 3
+        a.dropdown-item(href='/products?page=4') 4
