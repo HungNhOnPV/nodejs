@@ -647,6 +647,29 @@
         "14e147a9-72ca-4bae-b27f-827c6f9b9a5d": 1,
         "8a39351c-d260-4ffb-b80b-8c794a426829": 3
       }
+    },
+    {
+      "id": "CFJd9n8Ai"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "VDmE8IHyQ",
+      "amount": 200000,
+      "accountId": "123456",
+      "userId": "RFtu_UB5z"
+    },
+    {
+      "id": "W8cEjq78K",
+      "amount": 500000,
+      "accountId": "123456",
+      "userId": "RFtu_UB5z"
+    },
+    {
+      "id": "Vfk1Y0ra7",
+      "amount": 5000000,
+      "accountId": "123456",
+      "userId": "RFtu_UB5z"
     }
   ]
 }

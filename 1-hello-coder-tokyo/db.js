@@ -7,7 +7,8 @@ db =low(adapter);
 
 db.defaults({
 	users: [],
-	sessions: []
+	sessions: [],
+	transfers: []
 }).write();
 
 module.exports = db;
