@@ -1,7 +1,7 @@
 var Product = require('../models/product.model');
 // var db = require('../db');
 
-module.exports.index = async function(req, res) {
+module.exports.index = async function(req, res, next) {
   // var page = parseInt(req.query.page) || 1; // n
   // var perPage = 8; // x
 
@@ -21,8 +21,13 @@ module.exports.index = async function(req, res) {
   //   });
   // });
 
-  var products = await Product.find();
-	res.render('products/index', {
-		products: products
-	});
+  try {
+    var products = await Product.find();
+    products.foo(); // tao loi
+    res.render('products/index', {
+    products: products
+  });
+  } catch(error) {
+    next(error);
+  }
 };
