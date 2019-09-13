@@ -23,7 +23,7 @@ module.exports.index = async function(req, res, next) {
 
   try {
     var products = await Product.find();
-    products.foo(); // tao loi
+    // products.foo(); // tao loi
     res.render('products/index', {
     products: products
   });
